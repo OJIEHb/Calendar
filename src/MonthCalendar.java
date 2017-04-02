@@ -39,7 +39,7 @@ public class MonthCalendar {
                 System.out.print(DAY_OFF_COl+dayValue);
             else
                 System.out.print(COMMON_DAY_COl+dayValue);
-            if(((i+startPos)%7)==0)
+            if(monthDay.getDayOfWeek().getValue()==7)
                 System.out.println();
         }
     }
